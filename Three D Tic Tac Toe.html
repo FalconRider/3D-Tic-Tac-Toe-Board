@@ -1,0 +1,201 @@
+<html> 
+
+<! README
+
+  Just some creativity and coding practice
+  A derivative based on Evans KPL Javascript course 
+  Weeks two and three example
+
+  Get a USB hub. plug in two mice and 
+  two people can play on the one screen
+  alternating turns. 
+>
+<head>
+
+	<title> 3D tic-tac-toe	</title>
+
+	<style>
+
+		body {
+			background-color: green;
+		}
+		h1 {
+			color:white;
+			text-align: center;
+
+		}
+
+		p {
+			color:white;
+
+		}
+		
+
+
+		.row div{
+			border: 1px solid black;
+			height: 40px;
+			width: 40px;
+			float: left;
+			background-color: blue;
+			color:white;
+			border-radius: 10%;
+			text-align: center;
+			padding-top: 10px;
+			font-size: 15pt;
+			
+		}
+
+		.row {
+			clear: both;
+		}
+		button{
+			background-color: orange;
+			align: center;
+			width:124px;
+			height: 30px;
+			clear: both;
+			border-radius: 3px;
+
+		}
+
+		.board {
+			float: left;
+			padding: 10px;
+		}
+
+		#block {
+		margin:auto;
+		width: 60%;
+
+	}
+
+
+	</style>
+
+</head>
+
+<! xxxx pg 2020 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx>
+
+<body>
+
+<script>
+
+
+	var currentPlayer = "X";
+
+	
+	//To write comments in JavaScript use //
+	
+
+
+	function choose(box){
+		if (box.innerHTML !=""){
+			return;// check if box empty
+		}
+		box.innerHTML=currentPlayer;
+		if (currentPlayer == "X"){
+			currentPlayer = "O";
+		}
+		else{
+			currentPlayer = "X";
+
+		}
+
+	}
+
+
+	function reset(){
+		location.reload();
+
+	}
+
+</script>
+
+
+<h1>THREE D       TIC TACK TOE</h1>
+
+<hr>	
+
+<button onclick="reset()">RESET</button>
+
+<p>Click a SQUARE to place your X or O</p>
+
+<hr>
+
+
+<div id = "block">
+<div class ="board">
+   <div class = "row">
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   </div>
+
+   <div class = "row">
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   </div>
+
+   <div class = "row">
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   </div>
+
+</div>
+
+<div class ="board">
+
+   <div class = "row">
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   </div>
+
+   <div class = "row">
+
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   </div>
+
+   <div class = "row">
+
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   </div>
+
+</div>
+
+<div class = board>
+
+   <div class = "row">
+
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   </div>
+
+   <div class = "row">
+
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   </div>
+
+   <div class = "row">
+
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   		<div onclick="choose(this)"></div>
+   </div>
+
+</div></div><div><br>
+	
+
+</body>
+
+</html>
